@@ -86,10 +86,6 @@ main {
   object-fit: cover;
 }
 
-.btn {
-  line-height: 100%;
-}
-
 .list-inline {
   letter-spacing: -0.3em;
 }
