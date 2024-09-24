@@ -1,0 +1,65 @@
+.header {
+    &-container {
+        padding: 16px 113px 16px 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-left {
+        display: flex;
+        align-items: center;
+        gap: 0 125px;
+    }
+    &-right {
+        display: flex;
+        align-items: center;
+        gap: 0 125px;
+        .header-buttons {
+            display: flex;
+            gap: 0 16px;
+            .btn-login {
+                padding: 16px 41px;
+                color: $primary-color;
+                border: 1.5px solid #DBE1E9;
+                background: #FFF;
+            }
+            .btn-sign-up {
+                padding: 16px 51.5px;
+                color: #FFF;
+                background: $primary-color;
+            }
+        }
+        .header-languages {
+            display: flex;
+            align-items: center;
+            gap: 0 4px;
+            span {
+                color: #12141D;
+                font-family: $primar-font;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 0 45px;
+    li {
+        a {
+            color: $menu-text;
+            font-family: $primar-font;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            &.active {
+                color: $primary-color;
+            }
+        }
+    }
+}
