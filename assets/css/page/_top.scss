@@ -128,6 +128,26 @@
             justify-content: center;
             cursor: pointer;
         }
+        p {
+            padding: 11px 16px;
+            color: #202020;
+            font-family: $primar-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px;
+            text-align: left;
+            border-radius: 4px;
+            border: 1px solid #F97615;
+            background: #FFF3EB;
+            span {
+                color: #F97615;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 26px;
+            }
+        }
         .btn-change-keyword {
             display: inline-block;
             margin-top: 32px;
@@ -154,7 +174,7 @@
         img:nth-child(2) {
             position: absolute;
             right: 0;
-            top: -111px;
+            top: -20%;
         }
     }
 }
@@ -188,4 +208,151 @@
         }
     }
     
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        margin-bottom: 2.604vw;
+        &-container {
+            padding: 0 2.604vw;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    .link {
+        max-width: 100%;
+        margin: 0 auto 5.128vw auto;
+        &-container {
+            padding: 0 2.604vw;
+            p:first-child {
+                margin-bottom: 3.077vw;
+                font-size: 4.103vw;
+                line-height: 6.563vw;
+                span {
+                    color: #4BB7BB;
+                }
+            }
+            p:nth-child(2) {
+                margin-bottom: 3.077vw;
+                font-size: 3.59vw;
+                line-height: 3.385vw;
+            }
+        }
+        &-confirm {
+            gap: 0 2.083vw;
+            input {
+                flex: 1;
+                padding: 1.823vw 1.563vw 1.823vw 1.563vw;
+                font-size: 3.333vw;
+                line-height: 2.604vw;
+                border-radius: 0.521vw;
+                border: 0.13vw solid  #DBE1E9;
+            }
+            .btn-confirm {
+                padding: 2.564vw 3.077vw;
+                font-size: 3.333vw;
+                line-height: 3.125vw;
+                border-radius: 1.042vw;
+            }
+        }
+    }
+    .instruct {
+        margin-bottom: 2.604vw;
+        &-container {
+            max-width: 100%;
+            padding: 0 2.604vw;
+            margin: 0 auto;
+        }
+        &-top {
+            padding-top: 2.604vw;
+            margin-bottom: 2.083vw;
+            p:first-child {
+                margin: 0 0 2.083vw 0;
+                font-size: 4.103vw;
+                line-height: 6.563vw;
+            }
+            p:nth-child(2){
+                font-size: 3.59vw;
+                line-height: 3.385vw;
+            }
+        }
+        &-forum {
+            img:first-child {
+                margin-bottom: 2.604vw;
+            }
+            img:nth-child(2){
+                margin-bottom: 2.604vw;
+            }
+            img:nth-child(3){
+                margin-bottom: 2.604vw;
+            }
+            img:nth-child(4){
+                margin-bottom: 2.604vw;
+            }
+            .instruct-confirm.link-confirm {
+                max-width: 100%;
+                margin-bottom: 2.604vw;
+            }
+            p {
+                padding: 2.821vw 4.103vw;
+                font-size: 3.333vw;
+                line-height: 6.667vw;
+                border-radius: 1.026vw;
+                span {
+                    font-size: 3.333vw;
+                    line-height: 6.667vw;
+                }
+            }
+            p:last-child {
+                border: 0.256vw solid #F97615;
+            }
+            .btn-change-keyword {
+                margin-top: 2.604vw;
+                padding: 2.564vw 3.077vw;
+                font-size: 3.333vw;
+                line-height: 3.125vw;
+                border-radius: 1.042vw;
+            }
+        }
+        &-bg-blur {
+            img:first-child {
+                max-width: 20.833vw;
+            }
+            img:nth-child(2) {
+                max-width: 20.833vw;
+            }
+        }
+    }
+    .video {
+        padding-bottom: 2.604vw;
+        &-container {
+            max-width: 100%;
+            padding: 0 2.604vw;
+            margin: 0 auto;
+        }
+        &-box {
+            border-radius: 1.302vw;
+            p {
+                padding-top: 2.604vw;
+                margin-bottom: 2.604vw;
+                font-size: 4.103vw;
+                line-height: 6.563vw;
+            }
+            img {
+                max-width: 100%;
+                padding-bottom: 2.604vw;
+            }
+        }
+        
+    }    
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) and (max-width: 1919px) {
+
 }
