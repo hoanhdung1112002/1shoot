@@ -1,0 +1,99 @@
+.footer {
+    background: #00373A;
+    &-container {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 41px 0 32px 0;
+    }
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        .footer-logo {
+            img {
+                max-width: 132px;
+            }
+        }
+        .footer-right {
+            &-info {
+                display: flex;
+                align-items: center;
+                gap: 0 64px;
+                margin-bottom: 24px;
+                p {
+                    color: #FFF;
+                    font-family: $primar-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 28px;
+                    letter-spacing: -0.08px;
+                    span {
+                        font-weight: 400;
+                    }
+                }
+                p:first-child {
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        height: 100%;
+                        width: 1px;
+                        opacity: 0.35;
+                        background-color: #fff;
+                        right: -32px;
+                    }
+                }
+            }
+            &-socials {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 0 34.5px;
+                a {
+                    &:hover {
+                        transform: translateY(-4px);
+                        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                    }
+                }
+            }
+        }
+    }
+    &-sub {
+        padding-top: 20px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &::before {
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 100%;
+            top: 0;
+            background-color:#DBE1E9;
+            opacity: 0.24;
+        }
+        p.copy-right {
+            color: #FFF;
+            font-family: $primar-font;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+        }
+        &-policy {
+            display: flex;
+            gap: 0 24px;
+            a {
+                color: #FFF;
+                font-family: $primar-font;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+                text-decoration: none;
+            }
+        }
+    }
+}
