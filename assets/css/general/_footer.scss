@@ -109,100 +109,51 @@
         }
         &-main {
             text-align: center;
-            display: flex;
             flex-direction: column;
             justify-content: center;
             margin-bottom: 2.604vw;
             .footer-logo {
-                margin-bottom: 20px;
+                margin-bottom: 5.128vw;
                 img {
                     max-width: 33.846vw;
                 }
             }
             .footer-right {
                 &-info {
-                    display: flex;
-                    align-items: center;
                     justify-content: center;
-                    gap: 0 20px;
-                    margin-bottom: 24px;
+                    gap: 0 5.128vw;
+                    margin-bottom: 6.154vw;
                     p {
-                        color: #FFF;
-                        font-family: $primary-font;
                         font-size: 3.333vw;
-                        font-style: normal;
-                        font-weight: 600;
                         line-height: 3.646vw;
-                        letter-spacing: -0.08px;
-                        span {
-                            font-weight: 400;
-                        }
                     }
                     p:first-child {
-                        position: relative;
                         &::after {
-                            content: "";
-                            position: absolute;
-                            height: 100%;
-                            width: 1px;
-                            opacity: 0.35;
-                            background-color: #fff;
-                            right: -10px;
+                            right: -2.564vw;
                         }
                     }
                 }
                 &-socials {
-                    display: flex;
-                    align-items: center;
                     justify-content: center;
-                    gap: 0 34.5px;
-                    a {
-                        &:hover {
-                            transform: translateY(-4px);
-                            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-                        }
-                    }
+                    gap: 0 8.974vw;
                 }
             }
         }
         &-sub {
-            padding-top: 20px;
-            position: relative;
-            display: flex;
+            padding-top: 5.128vw;
             flex-direction: column-reverse;
-            align-items: center;
-            justify-content: space-between;
-            &::before {
-                position: absolute;
-                content: "";
-                height: 1px;
-                width: 100%;
-                top: 0;
-                background-color:#DBE1E9;
-                opacity: 0.24;
-            }
             p.copy-right {
                 margin-bottom: 4.103vw;
                 order: 2;
-                color: #FFF;
-                font-family: $primary-font;
                 font-size: 3.59vw;
-                font-style: normal;
-                font-weight: 400;
                 line-height: 4.615vw;
             }
             &-policy {
                 order: 1;
-                display: flex;
-                gap: 0 24px;
+                gap: 0 6.154vw;
                 a {
-                    color: #FFF;
-                    font-family: $primary-font;
                     font-size: 3.59vw;
-                    font-style: normal;
-                    font-weight: 400;
                     line-height: 4.615vw;
-                    text-decoration: none;
                 }
             }
         }

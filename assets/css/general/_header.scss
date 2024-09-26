@@ -118,10 +118,12 @@
                 .btn-login {
                     padding: 1.538vw 4.103vw;
                     font-size: 3.59vw;
+                    line-height: 1.5;
                 }
                 .btn-sign-up {
                     padding: 1.538vw 4.103vw;
                     font-size: 3.59vw;
+                    line-height: 1.5;
                 }
             }
             .header-languages {
@@ -329,6 +331,7 @@
             display: none;
         }
     }
+    
     .menu {
         display: flex;
         align-items: center;
@@ -353,6 +356,5 @@
         &-close {
             display: none;
         }
-    }
-    
+    }  
 }

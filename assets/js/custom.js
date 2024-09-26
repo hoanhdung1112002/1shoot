@@ -21,6 +21,7 @@ jQuery(function($) {
       $overlay.removeClass("active");
 		}
 	});
+  
 	var windowHeight = $(window).height();
         $(window).scroll(function() {
           var scrollPosition = $(window).scrollTop();
