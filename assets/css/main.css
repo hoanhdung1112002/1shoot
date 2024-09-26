@@ -1068,7 +1068,6 @@ main {
   color: #FC0000;
   font-family: "Inter", sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
   line-height: 26px;
 }
@@ -1179,7 +1178,6 @@ main {
   text-align: center;
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 600;
   line-height: 24px;
   border-radius: 8px;
@@ -1229,7 +1227,6 @@ main {
   text-align: center;
   font-family: "Inter", sans-serif;
   font-size: 36px;
-  font-style: normal;
   font-weight: 500;
   line-height: 50.4px;
 }
@@ -1339,11 +1336,11 @@ main {
     font-weight: 700;
   }
   .instruct-forum p:nth-of-type(3) {
-    margin-bottom: 16px;
+    margin-bottom: 4.103vw;
     padding: 0;
     color: #FC0000;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 3.59vw;
+    line-height: 5.641vw;
     background: none;
   }
   .instruct-forum p:nth-of-type(3) span {
@@ -1352,19 +1349,17 @@ main {
   }
   .instruct-forum p:nth-of-type(4) {
     margin-bottom: 5.128vw;
+    padding: 2.564vw;
     line-height: 1.5;
   }
   .instruct-forum p:nth-of-type(4) a {
-    margin-left: 16px;
+    margin-left: 4.103vw;
     padding: 1.538vw 7.692vw;
     font-size: 3.077vw;
+    line-height: 1.5;
   }
   .instruct-forum p:nth-of-type(5) {
-    margin-bottom: 29px;
-  }
-  .instruct-forum p:last-of-type {
-    border: 1px solid #F97615;
-    background: #FFF3EB;
+    margin-bottom: 7.436vw;
   }
   .instruct-forum img:nth-of-type(1) {
     margin-bottom: 5.128vw;
@@ -1379,9 +1374,13 @@ main {
   .instruct-forum .btn-change-keyword {
     display: inline-block;
     margin-top: 5.128vw;
+    padding: 3.077vw 0;
     width: 100%;
     font-size: 3.333vw;
     line-height: 1.5;
+  }
+  .instruct-bg-blur {
+    display: none;
   }
   .instruct-bg-blur img:first-child {
     max-width: 20.833vw;
@@ -1517,7 +1516,6 @@ main {
     color: #FC0000;
     font-family: "Inter", sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 500;
     line-height: 26px;
   }
@@ -1628,7 +1626,6 @@ main {
     text-align: center;
     font-family: "Inter", sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 600;
     line-height: 24px;
     border-radius: 8px;
@@ -1670,7 +1667,6 @@ main {
     text-align: center;
     font-family: "Inter", sans-serif;
     font-size: 36px;
-    font-style: normal;
     font-weight: 500;
     line-height: 50.4px;
   }
