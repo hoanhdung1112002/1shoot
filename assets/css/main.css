@@ -841,6 +841,12 @@ main {
     justify-content: center;
     gap: 0 8.974vw;
   }
+  .footer-main .footer-right-socials a img {
+    width: 4.872vw;
+  }
+  .footer-main .footer-right-socials a:nth-of-type(2) img {
+    width: 2.564vw;
+  }
   .footer-sub {
     padding-top: 5.128vw;
     flex-direction: column-reverse;
@@ -1705,6 +1711,10 @@ main {
     max-width: 100%;
     padding: 0 30px;
     margin: 0 auto;
+  }
+  .video-box img {
+    max-width: 100%;
+    padding: 20px;
   }
 }
 
