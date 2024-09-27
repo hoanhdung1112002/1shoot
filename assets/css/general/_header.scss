@@ -206,6 +206,9 @@
             position: absolute;
             left: 5.128vw;
             top: 5.128vw;
+            img {
+                width: 6.154vw;
+            }
             select {
                 padding-right: 5.128vw;
                 outline: none;
@@ -218,6 +221,7 @@
                 appearance: none;
                 background: url("../../assets/images/home/arrow_down.svg") no-repeat;
                 background-position: calc(100% + 1.026vw) center;
+                background-size: 6.154vw;;
                 option {
                     font-size: 4.103vw;
                 }

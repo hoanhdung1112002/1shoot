@@ -489,6 +489,9 @@ main {
     left: 5.128vw;
     top: 5.128vw;
   }
+  .navbar-languages img {
+    width: 6.154vw;
+  }
   .navbar-languages select {
     padding-right: 5.128vw;
     outline: none;
@@ -501,6 +504,7 @@ main {
     appearance: none;
     background: url("../../assets/images/home/arrow_down.svg") no-repeat;
     background-position: calc(100% + 1.026vw) center;
+    background-size: 6.154vw;
   }
   .navbar-languages select option {
     font-size: 4.103vw;
