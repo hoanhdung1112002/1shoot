@@ -1,5 +1,12 @@
 .header {
     margin-bottom: 48px;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    background: #FFF;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.03);
     &-container {
         padding: 16px 113px 16px 120px;
         display: flex;
@@ -53,6 +60,7 @@
                 appearance: none;
                 background: url("../../assets/images/home/arrow_down.svg") no-repeat;
                 background-position: calc(100% + 4px) center;
+                cursor: pointer;
                 option {
                     color: #12141D;
                     font-family: $primary-font;
@@ -68,26 +76,25 @@
     }
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-    gap: 0 45px;
-    li {
-        a {
-            color: $menu-text;
-            font-family: $primary-font;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 24px;
-            letter-spacing: -0.5px;
-            text-decoration: none;
-            &.active {
-                color: $primary-color;
+.navbar {
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: 0 45px;
+        li {
+            a {
+                color: $menu-text;
+                font-family: $primary-font;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: -0.5px;
+                text-decoration: none;
+                &.active {
+                    color: $primary-color;
+                }
             }
         }
-    }
-    &-logo {
-        display: none;
     }
     &-close {
         display: none;
@@ -137,9 +144,8 @@
             }
         }
     }
-    .menu {
-        position: relative;
-        padding-top: 20vw;
+    .navbar {
+        padding-top: 24vw;
         position: fixed;
         width: 70vw;
         background-color: #fff;
@@ -147,9 +153,6 @@
         right: 0;
         bottom: 0;
         z-index: 10;
-        display: flex;
-        flex-direction: column;
-        gap: 1.302vw 0;
         transform: translateX(100%);
         opacity: 0;
         transition: transform 0.5s ease, opacity 0.5s ease;
@@ -157,25 +160,27 @@
             transform: translateX(0);
             opacity: 1;
         }
-        li {
-            width: 100%;
-            a {
-                text-align: left;
-                display: block;
-                padding: 2.564vw;
-                margin: 0 1.302vw;
-                font-size: 4.103vw;
-                border-bottom: 0.13vw solid #dbe1e9;
-                transition: all 0.3s ease-in;
-                &.active {
-                    color: $primary-color;
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 1.302vw 0;
+            li {
+                width: 100%;
+                a {
+                    text-align: left;
+                    display: block;
+                    padding: 2.564vw;
+                    margin: 0 1.302vw;
+                    font-size: 4.103vw;
+                    border-bottom: 0.13vw solid #dbe1e9;
+                    transition: all 0.3s ease-in;
+                    &.active {
+                        color: $primary-color;
+                    }
                 }
             }
         }
-        &-logo {
-            margin-bottom: 5.208vw;
-            display: block;
-        }
+        
         &-close {
             display: block;
             position: absolute;
@@ -248,9 +253,8 @@
                 max-width: 40px;
             }
         }
-    }
-    
-    .menu {
+    }   
+    .navbar {
         padding-top: 100px;
         position: fixed;
         width: 400px;
@@ -259,9 +263,6 @@
         right: 0;
         bottom: 0;
         z-index: 10;
-        display: flex;
-        flex-direction: column;
-        gap: 10px 0;
         transform: translateX(100%);
         opacity: 0;
         transition: transform 0.5s ease, opacity 0.5s ease;
@@ -269,30 +270,31 @@
             transform: translateX(0);
             opacity: 1;
         }
-        li {
-            width: 100%;
-            a {
-                display: block;
-                padding: 10px 20px;
-                color: $menu-text;
-                font-family: $primary-font;
-                border-bottom: 0.13vw solid #dbe1e9;
-                transition: all 0.3s ease-in;
-                &.active {
-                    color: $primary-color;
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 10px 0;
+            li {
+                width: 100%;
+                a {
+                    display: block;
+                    padding: 10px 20px;
+                    color: $menu-text;
+                    font-family: $primary-font;
+                    border-bottom: 0.13vw solid #dbe1e9;
+                    transition: all 0.3s ease-in;
+                    &.active {
+                        color: $primary-color;
+                    }
                 }
             }
-        }
-        &-logo {
-            display: block;
-            margin-bottom: 40px;
-        }
+        }   
         &-close {
             display: block;
             position: absolute;
             max-height: 30px;
-            top: 20px;
-            right: 20px;
+            top: 30px;
+            right: 30px;
             border-radius: 50%;
             &:hover {
                 transform: translateY(-4px);
